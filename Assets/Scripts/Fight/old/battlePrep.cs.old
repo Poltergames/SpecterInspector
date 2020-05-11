@@ -1,0 +1,120 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class battlePrep : MonoBehaviour
+{
+	public GameObject MainCamObject;
+	protected Camera MainCam;
+	public GameObject BattleCamObject;
+	protected Camera BattleCam;
+
+	GameObject Player;
+	public GameObject Enemy;
+
+	Quaternion enemyRotTarget;
+	Quaternion playerRotTarget;
+	
+	Quaternion playerRot;
+	Quaternion EnemyRot;
+
+	public GameObject incorpButton;
+	public GameObject possesButton;
+	public GameObject astralButton;
+
+	public Vector3 playerPos;
+	public Vector3 EnemyPos;
+
+
+	//public inBattle script;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        MainCamObject = GameObject.Find("Main Camera");
+		MainCam = MainCamObject.GetComponent<Camera>();
+		BattleCam = gameObject.GetComponent<Camera>();
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+	public void battleStart( GameObject refPlayer, GameObject refEnemy ){
+
+		incorpButton.SetActive(true);
+		possesButton.SetActive(true);
+		astralButton.SetActive(true);
+
+		Player = refPlayer;
+		Enemy = refEnemy;
+
+		playerRotTarget = Quaternion.Euler(0, 270, 0);
+		enemyRotTarget = Quaternion.Euler(0, 90, 0);
+
+		//saves positions
+		playerPos = Player.transform.position;
+		EnemyPos = Enemy.transform.position;
+		//Saves rotations
+		playerRot = Player.transform.rotation;
+		EnemyRot = Enemy.transform.rotation;
+
+		//teleports participatns
+		//Player.transform.position = new Vector3( -12f, 100f, -10f );
+		//Enemy.transform.position = new Vector3 ( -12f, 100f, 10f );
+
+		StopAllCoroutines();
+		StartCoroutine(battlePositions(5));
+
+		//disables movement
+		Player.GetComponent<PlayerMovement>().enabled = false;
+		Player.GetComponent<Boundary>().enabled = false;
+
+		//switches camera
+		BattleCam.enabled = true;
+        MainCam.enabled = false;
+
+		//script.commenceBattle(refPlayer, refEnemy);
+	}
+
+	public void battleEnd(){
+		/*
+		//switches camera
+		BattleCam.enabled = false;
+        MainCam.enabled = true;
+
+		//teleports participants
+		Player.transform.position = playerPos;
+		Enemy.transform.position = EnemyPos;
+		*/
+	}
+
+	IEnumerator battlePositions(int atime){
+		float smooth = 5.0f;
+		for (float t = 0.0f; t <= 1.1f; t += Time.deltaTime)
+		{
+			//slows down last bit so they rise dramatically
+			if( 0.95f < t ){
+				t -= (Time.deltaTime*0.95f);
+			}
+			//Rotation
+			Player.transform.rotation = Quaternion.Slerp(playerRot, playerRotTarget, t);
+			Enemy.transform.rotation = Quaternion.Slerp(EnemyRot, enemyRotTarget, t);
+
+			//teleports participatns
+			Vector3 playerTar = new Vector3 (-5f, 100f, 0f);
+			Vector3 enemyTar = new Vector3 (-47f, 100f, 0f);
+
+			Player.transform.position = Vector3.Lerp(playerPos, playerTar, t);
+			Enemy.transform.position = Vector3.Lerp(EnemyPos, enemyTar, t);
+			//Debug.Log(t);
+			yield return new WaitForFixedUpdate();
+		}
+
+		yield return new WaitForFixedUpdate();
+	}
+
+}

@@ -1,0 +1,66 @@
+Progress,Speaker,Text,,,The text from the % cell in dialog (for reference only)
+1,Dexter: ,I control my movement through W|A|S|D|as well as having the ability to float utilizing LCTRL and Space. ,,Dexter - 2,You can move around using W|A|S|D. As an Inspector| remember to refer to your journal using &J& to aid you in your investigation. Should you become lost| refer to your map using ESC.%%
+2,Dexter: ,Incorporeal| Spirit Orb| and Astral Projection| the three techniques every Ghost should know if they want to defend themselves. It's important to know when to use certain abilities in combat. Incorporeal makes me invisible| Spirit Orb launches my destructive companion here| and Astral Projection is how I attack. Dexter says Mayor Samuel is looking for me| he is located at TOWNHALL.,,Dexter - 2,When in combat| you will have three buttons to utilize| these are your &moves&.  You utilize &Incorporeal& to evade incoming attacks|  &Spirit Orb& to send out your spiritual familiar to destroy incoming attacks| and &Astral Projection& to launch an attack at your enemy. On that note| Mayor Samuel is awaiting your arrival at the town hall.%
+3,,Samuel| a friend of mine I've made in death. He seems like a reliable guy| means well by his denizens.  I don't mind helping him.,,Samuel - 3,Inspector! My friend! I am glad to see you; recently |the residents of Blightingham have been disappearing.%%
+4,Samuel: ,Ghost are going missing| huh? Even in death| there seems to be a way for crime to be committed. ,,Samuel - 3,As the mayor| I cannot stand idly by while my citizens are going missing -- without a trace.%%
+5,Samuel: ,He considers me the greatest Inspector to have ever lived| I suppose that's one way to make a name for yourself. Every investigation begins with the locals; lets see what I can find. I'll start with the cowboy| Jimboy Calloway. He lives to the West of TOWNHALL.,,Samuel - 3,As one of the greatest Inspectors to ever live| I trust that you will do what you do best and get to the bottom of this mystery. I recommend you start with the local citizens to see if you can find out what's happening.%
+6,Jimboy Calloway: ,The greatest gun in the West| huh? Everyone has to make a living in their own way. ,,Jimboy Calloway - 1,Howdy| Inspector! Yer talkin' to the greatest gun in the West! Well| the former title-holder! What can I do for ya?%%
+7,Jimboy Calloway : ,What a strange connection| a cowboy knowing a journalist named CHAI-AN| who frequents a BAR? ,,Jimboy Calloway - 1,I haven't seen any suspicious looking fellas| but if I were you| I'd go check in on the beautiful Chai-An! She'd have a knack for this kinda business. Check the bar.%
+8,Chai-An: ,Certainly a quirky Ghost| but she seems to be knowledgable regarding potential scoops. It'd be foolish not to use her information.,,Chai-An - 4,Yo| Inspector! Can you lend me an interview with your buddy? You two met this morning!%%
+9,Chai-An: ,Besides negotiating for an interview with the Mayor| she mentioned discovering a BLOODY SCARF and the name Lucian Corneilius.,,Chai-An - 4,Did you talk with your mayor friend yet?%%
+10,Chai-An: ,For a journalist to be scared of an item on a crime-scene| I wonder what are the implications of it's existence.,,Chai-An - 4,Jimboy sent you to me? About a potential scoop? Disappearing ghosts? I was interested in it| but didn't go any further with it.%%
+11,Chai-An: ,A Barkeep named Bastion. That's peculiar| but I suppose it doesn't make too much of a difference. I'll listen to what he has to say. He is at the BAR.,,Chai-An - 4,The reason being is the disturbing items that were found at the scene. That bloody scarf| being one of them.%%
+12,Chai-An: ,A red scarf| a fella by the name Lucian Corneilius| and a scared journalist. I wonder what's the correlation here. I should speak with BASTION at the BAR.,,Chai-An - 4,In exchange for what I know| you'll land me an interview with Mayor Samuel. Deal? Deal. In my initial research| the name &Lucian Corneilius& continued to pop up. He certainly sounds like an erratic being| maybe Bastion would know.%
+13,Bastion: ,The name &Lucian Corneilius& has appeared again. It can't be by fate| and I believe I may have found a new lead. He likes to frequent the PLAZA.,,Bastion - 5,Chai-An decided to recommend you to me| then| huh?%%
+14,,,,Bastion - 5,A drink for your troubles? I suppose going to a bar wouldn't me much different in death. It is the place of information| after all.%%
+15,,,,Bastion - 5,Lucian Corneilius. I can't say I know much about him| but I know he likes to hang out in the plaza. If he's connected to the crime like you say he is; then your best bet would be there.%
+16,Key Item: ,I've found a bloody scarf| I didn't think it was possible for Ghosts to bleed. I can link this to Lucian Corneilius| I should confront him in the PLAZA.,,Bloody Scarf - 6,You've found a bloody scarf.%
+17,,,,Lucian Corneilius-7,You've finally caught on| Inspector. I'm not surprised; after all| you were one of the greatest Inspectors to exist!%%
+18,,,,Lucian Corneilius-7,Even if you were to strike me down| there are two others in our rank! We will have the final laugh.%%
+19,Lucian Corneilius: ,I've encountered and defeated Lucian Corneilius. I should report my findings back to Samuel.,,Lucian Corneilius-7,After you caused my death| I couldn't simply rest peacefully. We decided to target you. You can'not defeat me| even with a spiritual guardian on your side! Prepare to fight!%%%
+20,,,,Samuel - 3,With the defeat of Lucian Corneilius| we're one stop closer to defeating this group of villains.%%
+21,,,,Samuel - 3,You said that he mentioned he was receiving assistance; correct? It would explain why those strange looking eyes appeared suddenly. It has everyone on edge| the city is under siege.%%
+22,Samuel: ,The mayor thinks that there's more to this given the attack of the mysterious eye. I wonder what it is| it appears to be driven by technology. I should ask around.,,Samuel - 3,Do your best to avoid getting detected by that monstrosity| Inspector! We don't know what it'll do to you.%
+23,,,,Lucy Jones-8,This bar has certainly seen better days; I mean| come on. No one wants to party because of spooky eye in the sky? We're ghosts already.%%
+24,,,,Lucy Jones-8,Oh| Inspector! To what do I owe the pleasure? Shall I buy you a drink?%%
+25,Lucy Jones: ,I spoke with a rather sadder ghost than others named Lucy; she revealed that the Mayor has the technology to contact the world of the living. I'll speak with him.,,Lucy Jones-8,You're investigating all of this madness| huh... well| if I were you| why not ask the Mayor to allow you to call for assistance? Your wife was an inspector as well. Maybe she'd be able to make sense of it.%
+26,,,,Samuel - 3,Lucy Jones recommended that you come back to speak with me? Leave it to the widow to know about Blightingham's greatest secret....%%
+27,,,,Samuel - 3,One of Blightingham's greatest secrets is that we have the means to communicate with the otherside| the world of the living. %%
+28,,,,Samuel - 3,It's a power that is reserved to be used as a last resort| but if you think that your wife| Kallista Spector| will be able to help you with this| then I shall approve.%%
+29,Samuel: ,A device to communicate with the world of the living...? Is such a device possible? I suppose there's only one way to find out. It is located in Townhall.,,Samuel - 3,To activate the device| all you have to do is approach the newly formed fire pit. Then| you two will be able to communicate with each other.%
+30,,,,Kallista Spector-10,Spector! It's you! I never thought I'd hear from you again.%%
+31,,,,Kallista Spector-10,You're contacting me about a case that you're working on? You're working| even in death? Some things never change!%%
+32,,,,Kallista Spector-10,In our world| the criminals that we've arrested have all recently been sentenced to death. You know who caught and arrested them| right? Us. It's not impossible that they'd try to extract revenge. If I remember correctly| RONIN was their leader.%%
+33,,,,Kallista Spector-10,With that in mind| with their deaths occurring| and the appearance of people targeting you| it's possible they want revenge| even in death.%%
+34,Kallista Spector: ,To think I was able to speak with my wife once again| it sounds unreal| but then again| I'm a ghost working on a case in the after-life. I don't know what to think| but it was nice to hear her voice again. She thinks that they are people who died that I arrested. I should follow up on this with the technological capable people in town.,,Kallista Spector-10,As much as I'd love to help you| it feels as if our connection is fading. Rely on your allies| and remember| I miss you| Inspector.%
+35,Samuel: ,The Mayor's ability to allow me to talk to my wife was a welcome change| and he managed to provide a useful name: DUVAMIL TIMBERS| a black-smith that residents in Blightingham. I should look for him.,,Samuel - 3,I hope that helped you| Inspector. She mentioned that they were people that you sentenced to jail in life? Interesting. You should speak with Duramil Timbers| the blacksmith of Blightingham.%
+36,,,,Duvamil Timbers-9,You must be the Inspector that everyone's talking about.%%
+37,,,,Duvamil Timbers-9,Ever since that mechanical eye took to the skies| I haven't seen a ghost enter the shop. You takin' care of it?%%
+38,Duvamil Timbers: ,I learned from the Duvamil that this belonged to ZANNA GARRICK| the mechanist of this town. To think that was she was working for the enemy team this entire time....,,Duvamil Timbers-9,Judging by the make| it appears to be Zanna's.%
+39,,,,Zanna Garrick-11,Inspector! It appears you've finally caught on. It was I| Zanna| the master of technology!%%
+40,,,,Zanna Garrick-11,It took you long enough to deduce that I was a part of the crime going on here; after all| who could create such beautiful technology? No one is my equal! %%
+41,Zanna Garrick: ,I've defeated Zanna Garrick| which means two members behind this attack have been taken down| but she mentioned that I'm being fooled... by who| I wonder? I should report back to Samuel at the TOWNHALL.,,Zanna Garrick-11,You may have defeated Lucian| but it stops here| with me| Zanna!%%%
+42,,,,Samuel - 3,Inspector| excellent work. I've received notification that the monstrosity that has been hovering around Blightingham is no more. The city owes you a great debt| and we cannot thank you enough. Despite defeating two of them| there's the problem remaining of the mastermind being out there.%%
+43,,,,Samuel - 3,Remember how you managed to get this far; through the citizens; nay| your allies. Through them| there'll be an answer as to where Ronin is.%%
+44,Samuel: ,The Mayor and I deduced that this is the work of RONIN| an enemy of mine from life. If I'm going to find out where he's at| it'll be through the help of the others.,,Samuel - 3,We're counting on you| Inspector.%
+45,Jimboy Calloway: ,Jimboy Calloway thinks he'd be somewhere center-stage... I don't disagree with him. Knowing Ronin| he likes to have an audience. I should follow up with Chai-An| at the bar.,,Jimboy Calloway - 1,If you're at the tail-end of your case| where do you think the bad guy would go? My guess would be somewhere he can take center-stage.%
+46,Bastion:,Bastion believes that my nemesis is attempting to create a grand stage| if he were to| my guess would be at the Church| if he possesses such a highly attitude.,,Bastion - 5,If I were your nemesis| and I wanted to fight you in death| wouldn't it make sense for me to stir up a show?%
+47,,,,Chai-An - 4,Nothing escapes this reporter| Inspector| I've discovered that the Count is not what he seems.%
+48,,,,Count Valgo-12,Inspector! I've waited a long time for this. I will not be denied my one attempt of erasing you from this world. After all| we've both already died.%%
+49,,,,Count Valgo-12,The others were pawns who never were going to amount to anything| It's pathetic how easily it was to manipulate them to work for me| in death| even after they slaved away for me.%%
+50,,,,Count Valgo-12,Why am I doing all of this? Because I was on the verge of success in life... I've struck the perfect deal that would've lead me to having more money than I could ever spend| until you robbed me of my dream! Then| when I was sentenced to death| I found that death wasn't the end... that I could become great here. The only problem was that fate would have you remain.%%
+51,,,,Count Valgo-12,This is pathetic| I'm going to eliminate you once and for all| and claim my dream of greatness! Come at me| Inspector!%%%
+52,,,,Dexter - 2,Congratulations| you've beaten the game.%
+53,,,,#N/A,#N/A
+54,,,,#N/A,#N/A
+55,,,,#N/A,#N/A
+56,,,,#N/A,#N/A
+57,,,,#N/A,#N/A
+58,,,,#N/A,#N/A
+59,,,,#N/A,#N/A
+60,,,,#N/A,#N/A
+61,,,,#N/A,#N/A
+62,,,,,#N/A
+,,,,,#N/A
+,,,,,#N/A
+,,,,,#N/A

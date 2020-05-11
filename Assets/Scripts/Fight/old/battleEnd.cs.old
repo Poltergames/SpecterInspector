@@ -1,0 +1,84 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+
+public class battleEnd : inBattle
+{
+
+
+	public GameObject Player;
+	public GameObject Enemy;
+	public battlePrep script;
+
+	public GameObject incorpButton;
+	public GameObject possesButton;
+	public GameObject astralButton;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Player = GameObject.Find("Player");
+		GameObject BattleCamera = GameObject.Find("BattleCamera");
+		script = inBattle.GetComponent<battlePrep>();
+		//Enemy = script.Enemy;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+
+	public void battleFin(GameObject refEnemy){
+		StopAllCoroutines();
+		StartCoroutine(setSize());
+
+		incorpButton = GameObject.Find("IncorporealButton");
+		possesButton = GameObject.Find("PossessionButton");
+		astralButton = GameObject.Find("AstralRecoveryButton");
+
+		Enemy = refEnemy;
+
+		//teleports participatns
+		//Player.transform.position = new Vector3( -12f, 100f, -10f );
+		//Enemy.transform.position = new Vector3 ( -12f, 100f, 10f );
+
+
+		//switches camera
+		script.BattleCam.enabled = false;
+		script.MainCam.enabled = true;
+
+		//teleports participants
+		Player.transform.position = script.playerPos;
+		Enemy.transform.position = script.EnemyPos;
+
+
+
+		incorpButton.SetActive(false);
+		possesButton.SetActive(false);
+		astralButton.SetActive(false);
+
+		//enables movement
+		Player.GetComponent<PlayerMovement>().enabled = true;
+		Player.GetComponent<Boundary>().enabled = true;
+
+	}
+
+	IEnumerator setSize(){
+		float scale = 10.0f;
+
+		for (float t = 0.0f; t < 1.1f; t += Time.deltaTime * 0.1f)
+		{
+			//Debug.Log(t);
+			Player.transform.localScale = new Vector3( Mathf.Lerp(Player.transform.localScale.x, scale, t), Mathf.Lerp(Player.transform.localScale.y, scale, t), Mathf.Lerp(Player.transform.localScale.z, scale, t) );
+			Enemy.transform.localScale = new Vector3( Mathf.Lerp(Enemy.transform.localScale.x, scale, t), Mathf.Lerp(Enemy.transform.localScale.y, scale, t), Mathf.Lerp(Enemy.transform.localScale.z, scale, t) );
+			//Debug.Log(Enemy.transform.localScale.z);
+			//Debug.Log(Player.transform.localScale.z);
+			yield return new WaitForFixedUpdate();
+		}
+		yield return new WaitForFixedUpdate();
+	}
+}

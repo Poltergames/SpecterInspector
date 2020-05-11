@@ -1,0 +1,106 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class inBattle : battlePrep
+{
+	enum elements { Incorporeal = 0, Possession = 1, AstralRecovery = 2 }
+	int playerHealth = 5;
+	int enemyHealth = 5;
+
+	private int playerChoose = -1;
+	private int botChoose = -1;
+
+	private bool playersTurn = true;
+
+	GameObject Player;
+	GameObject Enemy;
+
+	public battlePrep script;
+	public battleEnd final;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        playerHealth = 5;
+		enemyHealth = 5;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+	//private battlePrep _battlePrep;
+
+	public void setFoes(GameObject enem){
+
+		Enemy = enem;
+	}
+
+	public void commenceBattle(){
+
+		Player = GameObject.Find("Player");
+		GameObject BattleCamera = GameObject.Find("BattleCamera");
+		script = BattleCamera.GetComponent<battlePrep>();
+		Enemy = script.Enemy;
+
+
+		GameObject battleEnder = GameObject.Find("battleEnder");
+		final = battleEnder.GetComponent<battleEnd>();
+
+
+		botChoose = Random.Range(0, 3);
+
+		//playermove
+		// 0: Rock		1: Paper	2: Scissors
+		switch (playerChoose)
+		{
+		case 2:
+			print ("You go scissors");
+
+			break;
+		case 1:
+			print ("You go paper");
+
+			break;
+		case 0:
+			print ("You go rock");
+
+			break;
+
+		default:
+			print ("Incorrect intelligence level.");
+			break;
+		}
+
+		if( 0 >= playerHealth || 0 >= enemyHealth ){
+			final.battleFin(Enemy);
+		}
+		/* Heal mechanic removed
+		else if( 10 < playerHealth ){
+			playerHealth = 10;
+		}else if( 10 < enemyHealth ){
+			enemyHealth = 10;
+		}*/
+
+		StopAllCoroutines();
+		StartCoroutine(setSize( playerHealth, Player ));
+		StartCoroutine(setSize( enemyHealth, Enemy ));
+
+	}
+	void PlayerChoose(int choose)
+    {
+        playerChoose = choose;
+        commenceBattle();
+    }
+
+	IEnumerator setSize(int health, GameObject shrinker){
+		float scale = health * 2;
+		for (float t = 0.0f; t < 1.1f; t += Time.deltaTime)
+		{
+			shrinker.transform.localScale = new Vector3( Mathf.Lerp(shrinker.transform.localScale.x, scale, t), Mathf.Lerp(shrinker.transform.localScale.y, scale, t), Mathf.Lerp(shrinker.transform.localScale.z, scale, t) );
+		}
+		yield return new WaitForFixedUpdate();
+	}
+}
