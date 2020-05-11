@@ -8,9 +8,11 @@ public class Lightning : MonoBehaviour
     float randomWait = 5f;
     AudioSource audioSource;
     public GameObject dirLight;
-    public float bright = 0.01f;
+
+    public float bright = 1f;
     public float duration = 1f;
     public float delay = 1f;
+    public float dim = 0.1f;
 
     public AudioClip thunder1;
     public AudioClip thunder2;
@@ -47,7 +49,7 @@ public class Lightning : MonoBehaviour
         //lumens = Random.Range;
         dirLight.GetComponent<HDAdditionalLightData>().intensity = bright;
         yield return new WaitForSeconds(duration);
-        dirLight.GetComponent<HDAdditionalLightData>().intensity = 0.001f;
+        dirLight.GetComponent<HDAdditionalLightData>().intensity = dim;
 
         yield return new WaitForSeconds(delay);
         audioSource.clip = thunders[Random.Range(1,4)];

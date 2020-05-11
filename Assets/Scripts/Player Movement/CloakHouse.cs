@@ -105,7 +105,7 @@ public class CloakHouse : MonoBehaviour
 
 			Player.SendMessage("changeRainTrack", true);
 			StopAllCoroutines();
-			StartCoroutine(FadeTo(0.0f, 1.0f, 0.5f));
+			StartCoroutine(FadeTo(0.0f, 1.0f, 500f));
 		}
 	}
 	void OnTriggerExit (Collider Player_c){
@@ -117,7 +117,7 @@ public class CloakHouse : MonoBehaviour
 			Player.GetComponent<Renderer>().enabled = false;
 			Player.SendMessage("changeRainTrack", false);
 			StopAllCoroutines();
-			StartCoroutine(FadeTo(1.0f, 1.0f, 10f));
+			StartCoroutine(FadeTo(1.0f, 1.0f, 5000f));
 		}
 	}
 

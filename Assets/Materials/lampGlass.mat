@@ -134,7 +134,7 @@ Material:
     - _DetailNormalScale: 1
     - _DetailSmoothnessScale: 1
     - _DiffusionProfile: 0
-    - _DiffusionProfileHash: 0
+    - _DiffusionProfileHash: 2.5399327
     - _DisplacementLockObjectScale: 1
     - _DisplacementLockTilingScale: 1
     - _DisplacementMode: 0
@@ -234,13 +234,14 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.3781466, b: 0, a: 1}
+    - _BaseColor: {r: 1, g: 0.8535939, b: 0, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 0.37814656, b: 0, a: 1}
-    - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 0.8535939, b: 0, a: 1}
+    - _DiffusionProfileAsset: {r: -3.0534484e-37, g: 1340.0278, b: -9.927975e-36,
+        a: -0.06537724}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 0.24313726, g: 0.08627451, b: 0, a: 1}
+    - _EmissiveColor: {r: 248.97255, g: 88.3451, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0.9716981, g: 0.9503574, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
