@@ -1,1 +1,1 @@
-Init
+Specter Inspector repository
