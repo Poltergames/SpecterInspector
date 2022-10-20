@@ -8,3 +8,5 @@ Itch.io Link: https://telemain.itch.io/specter-inspector
 Trailer + Dev commentary: https://www.youtube.com/watch?v=1NE5NO7nigw
 
 Gameplay: https://www.youtube.com/watch?v=1NE5NO7nigw
+
+Blog: https://poltergames.github.io/capstone-blog/
